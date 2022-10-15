@@ -4,3 +4,16 @@
 
 string[] arrayFirst = new string[7] {"2", ";-)", "hello", "world", "yes", "2009", "11"};
 string[] arraySecond = new string[arrayFirst.Length];
+void ArraySecond(string [] arrayFirst, string [] arraySecond)
+{
+    int count = 0;
+    for (int i=0; i<arrayFirst.Length; i++)
+    {
+        if(arrayFirst[i].Length <= 3)
+        {
+        arraySecond[count] = arrayFirst[i];
+        count++;
+        }
+    }
+}
+ArraySecond(arrayFirst, arraySecond);
